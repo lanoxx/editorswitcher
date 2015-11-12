@@ -7,3 +7,7 @@ The code is originally from: http://www.joomler.net/download/140-joomla16-plugin
 
 Since its open source but has not been updated since a few years I have choosen to upload my modification on Github.
 
+## Changes
+
+I changed the switcher dropdown button to look more like the other bootstrap styled button next to it.
+This gives the buttons a more consistent look.
