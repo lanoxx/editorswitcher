@@ -177,7 +177,7 @@ class plgEditorSwitcher extends JPlugin
 
 			//html0
 			$selector = ''
-			. '<div id="switcherSelector" style="vertical-align:middle;margin:9px 0 0 5px;display:inline-block;"><input type="hidden" id="editorswitcher-currentvalue" value="'
+			. '<div id="switcherSelector" class="btn-toolbar"><input type="hidden" id="editorswitcher-currentvalue" value="'
 			. $current . '" />'
 			. JHtml::_('select.genericlist', $editors, 'switcheditor' . ''
 					, 'class="btn" ' . $js, 'value', 'text', $current, 'jswitcheditor')
@@ -188,6 +188,11 @@ class plgEditorSwitcher extends JPlugin
 			$js = "var jswitcherEditors = $array;window.addEvent('domready', function(){var btnwrap = $$('#editor-xtd-buttons .btn-toolbar');if(btnwrap.length > 0)"
 			. " document.id('switcherSelector').inject(btnwrap[0]);	setTimeout(function(){var curSelected = '#jswitcheditor_chzn_o_'+$index;if(jQuery(curSelected)) jQuery(curSelected).trigger('mouseup');}, 1000);});";
 			JFactory::getDocument()->addScriptDeclaration($js);
+			JFactory::getDocument()->addStyleDeclaration('
+				#switcherSelector { display: inline-block; margin-left: 5px; }
+				#switcherSelector .chzn-container-single .chzn-single { height: 26px; line-height: 26px; }
+				#switcherSelector .chzn-container-single .chzn-single div { top: 2px; }
+			');
 		}
 
 		return $selector;
