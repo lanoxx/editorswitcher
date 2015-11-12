@@ -177,7 +177,7 @@ class plgEditorSwitcher extends JPlugin
 
 			//html0
 			$selector = ''
-			. '<div id="switcherSelector" style="vertical-align:middle;margin:0 0 0 5px;display:inline-block;"><input type="hidden" id="editorswitcher-currentvalue" value="'
+			. '<div id="switcherSelector" style="vertical-align:middle;margin:9px 0 0 5px;display:inline-block;"><input type="hidden" id="editorswitcher-currentvalue" value="'
 			. $current . '" />'
 			. JHtml::_('select.genericlist', $editors, 'switcheditor' . ''
 					, 'class="btn" ' . $js, 'value', 'text', $current, 'jswitcheditor')
