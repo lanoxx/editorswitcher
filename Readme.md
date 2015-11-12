@@ -1,4 +1,4 @@
-= Editor Switcher for Joomla
+# Editor Switcher for Joomla
 
 I found this code via the Joomla extensions page on
 http://extensions.joomla.org/extension/switch-editor
